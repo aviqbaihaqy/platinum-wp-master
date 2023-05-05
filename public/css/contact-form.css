@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 16px 8px;
+    border: none;
+    margin-top: 0px;
+    margin-bottom:5px;
+    resize: vertical;
+    border-radius: 3px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #F2F2F2;
+    color: black;
+}
+
+input[type=submit] {
+    background-color: #1C1C1C;
+    color: white;
+    padding: 8px 16px;
+    border-radius:0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    width: 130px;
+    margin-top: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #1C1C1C;
+    color: white;
+    transition: 0.2s;
+}
+
+label {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: #1C1C1C;
+    float: none;
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+/* Style the container/contact section */
+.containerform {
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 1em 0; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media(max-width:575px) {
+    label {
+        font-size: 14px;
+    }
+
+    input[type=text], select, textarea {
+        font-size: 14px;
+    }
+
+    input[type=submit] {
+        font-size: 14px;
+        width: 100px;
+    }
+}

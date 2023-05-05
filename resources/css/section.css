@@ -1,0 +1,82 @@
+/* SECTION CONTENT */
+.section-about {
+	padding: 4.5em 0;
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/bg-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-about:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(255, 255, 255,.0);
+}
+
+.section-brand {
+	background-color: white;
+	position: relative;
+	padding: 4.5em 0;
+}
+
+.section-history, .section-terms, .section-checkout,
+.section-contact, .section-product, .section-profile,
+.section-invoice, .section-results {
+	background-color: white;
+	position: relative;
+	padding: 4.5em 0;
+}
+
+.section-faq {
+	background-color: #F2F2F2;
+	position: relative;
+	padding: 3em 0;
+}
+
+.section-vision-mision, .section-value {
+	padding: 4.5em 0;
+    background-color: #F2F2F2;
+	position: relative;
+}
+
+.section-related {
+	background-color: white;
+	position: relative;
+	padding: 3em 0 4.5em 0;
+	margin-top: 3em;
+}
+
+.section-favorites {
+	background-color: white;
+	position: relative;
+}
+
+.section-advertisement {
+	padding:6em 0;
+    position: relative;
+    background-image: url(../images/bg-11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-features {
+	background-color: #1C1C1C;
+	position: relative;
+	padding: 4.5em 0;
+}
+
+.section-features .content {
+  	-webkit-transform: skew(0deg, 2deg);
+  	transform: skew(0deg, 2deg);
+  	text-align: center;
+}
+
+.section-products {
+	position: relative;
+	background-color: white;
+}

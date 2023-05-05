@@ -1,0 +1,135 @@
+details{
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+summary {
+    transition: background .75s ease;
+    width: 100%;
+    outline: 0;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-top: 1px solid #D8D8D8;
+    padding: 0 10px;
+}
+
+details p {
+    padding: 10px 20px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+    text-align: left;
+    line-height: 1.5em;
+    max-width: 1000px;
+}
+
+summary::after {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    content: "+";
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 16px;
+    color: #1C1C1C;
+}
+details[open] summary::after {
+    content: "-";
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+details[open] summary:hover {
+  background:none;
+}
+summary:hover {
+    background: #F2F2F2;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+@media(max-width:767px){
+    details p {
+        font-size: 14px;
+    }
+}
+
+
+
+/* category collapsible */
+details.category{
+  padding: 0;
+}
+
+summary.category {
+    transition: background .75s ease;
+    width: 100%;
+    outline: 0;
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    padding: 0.75em 0 0;
+}
+
+details.category ul li a{
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+    text-align: left;
+    width: 100%;
+}
+
+summary.category::after {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    content: "+";
+    display: inline-block;
+    padding: 0;
+    font-size: 20px;
+    color: #1C1C1C;
+}
+
+details.category[open] summary.category::after {
+    content: "-";
+    display: inline-block;
+    padding: 0;
+    font-size: 20px;
+    color: #1C1C1C;
+}
+
+details.category[open] summary.category:hover {
+  background:none;
+}
+
+summary.category:hover {
+    color: #1C1C1C;
+    background-color: transparent;
+}
+
+details.category summary.category::-webkit-details-marker {
+  display:none;
+}
+
+@media(max-width:767px){
+    summary.category {
+        font-size: 16px;
+    }
+}
